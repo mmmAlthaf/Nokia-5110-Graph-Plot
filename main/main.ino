@@ -382,28 +382,6 @@ void drawY_Axis_ValuesNew(float a[]) {
 
   
 }
-void drawY_Axis_Values() {
-  p_zero(0,6);
-  p_dot(4,6);
-  p_five(6,6);
-  
-  p_zero(0,13);
-  p_dot(4,13);
-  p_four(6,13);
-
-  p_zero(0,20);
-  p_dot(4,20);
-  p_three(6,20);
-
-  p_zero(0,27);
-  p_dot(4,27);
-  p_two(6,27);
-  
-  p_zero(0,34);
-  p_dot(4,34);
-  p_one(6,34);
-  
-}
 
 void drawX_Axis_ValuesNew(float a[]) {
   
@@ -457,7 +435,7 @@ void drawX_Axis_ValuesNew(float a[]) {
         break;
         default: p_zero(27,43);
       }
-      p_dot(31,27);
+      p_dot(31,43);
       switch((int)(a[i]*10)%10){
         case 0: p_zero(33,43);
         break;
@@ -494,7 +472,7 @@ void drawX_Axis_ValuesNew(float a[]) {
         break;
         default: p_zero(39,43);
       }
-      p_dot(43,20);
+      p_dot(43,43);
       switch((int)(a[i]*10)%10){
         case 0: p_zero(45,43);
         break;
@@ -598,29 +576,7 @@ void drawX_Axis_ValuesNew(float a[]) {
   
 }
 
-void drawX_Axis_Values(void) {
-  
-  p_zero(15,43);
-  p_dot(19,43);
-  p_one(21,43);
-  
-  p_zero(27,43);
-  p_dot(31,43);
-  p_two(33,43);
 
-  p_zero(39,43);
-  p_dot(43,43);
-  p_three(45,43);
-
-  p_zero(51,43);
-  p_dot(55,43);
-  p_four(57,43);
-  
-  p_zero(63,43);
-  p_dot(67,43);
-  p_five(69,43);
-  
-}
 
 
 void p_zero(int x,int y) {
