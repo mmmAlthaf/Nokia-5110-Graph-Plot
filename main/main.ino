@@ -77,7 +77,7 @@ void setup()   {
 
   display.clearDisplay();   // clears the screen and buffer
 
-  float ar1[5]={0.1,4.3,2.5,3.7,9.9};
+  float ar1[5]={21,1.3,2.5,3.7,9.9};
   float ar2[5]={1.1,5.3,4.5,8.7,6.9};
 
 //  if((int)(ar1[0]*10)%10==1)
@@ -86,8 +86,6 @@ void setup()   {
   drawY_Axis();
   drawX_Axis();
   
-//  drawY_Axis_Values();
-//  drawX_Axis_Values();
   drawY_Axis_ValuesNew(ar1);
 
   drawX_Axis_ValuesNew(ar2);
@@ -440,7 +438,190 @@ void drawY_Axis_ValuesNew(float a[]) {
       }
     }
     else if((int)a[i]>9){
-      
+      if(i==0){
+        switch((int)(a[i]/10)){
+          case 0: p_zero(0,34);
+          break;
+          case 1: p_one(0,34);
+          break;
+          case 2: p_two(0,34);
+          break;
+          case 3: p_three(0,34);
+          break;
+          default: p_zero(0,34);
+        }
+//        p_dot(4,34);
+        switch((int)(a[i])%10){
+          case 0: p_zero(4,34);
+          break;
+          case 1: p_one(4,34);
+          break;
+          case 2: p_two(4,34);
+          break;
+          case 3: p_three(4,34);
+          break;
+          case 4: p_four(4,34);
+          break;
+          case 5: p_five(4,34);
+          break;
+          case 6: p_six(4,34);
+          break;
+          case 7: p_seven(4,34);
+          break;
+          case 8: p_eight(4,34);
+          break;
+          case 9: p_nine(4,34);
+          break;
+          default: p_zero(4,34);
+        }
+      }
+      else if(i==1){
+        switch((int)a[i]){
+          case 0: p_zero(0,27);
+          break;
+          case 1: p_one(0,27);
+          break;
+          case 2: p_two(0,27);
+          break;
+          case 3: p_three(0,27);
+          break;
+          default: p_zero(0,27);
+        }
+//        p_dot(4,27);
+        switch((int)(a[i]*10)%10){
+          case 0: p_zero(4,27);
+          break;
+          case 1: p_one(4,27);
+          break;
+          case 2: p_two(4,27);
+          break;
+          case 3: p_three(4,27);
+          break;
+          case 4: p_four(4,27);
+          break;
+          case 5: p_five(4,27);
+          break;
+          case 6: p_six(4,27);
+          break;
+          case 7: p_seven(4,27);
+          break;
+          case 8: p_eight(4,27);
+          break;
+          case 9: p_nine(4,27);
+          break;
+          default: p_zero(4,27);
+        }
+      }
+      else if(i==2){
+        switch((int)a[i]){
+          case 0: p_zero(0,20);
+          break;
+          case 1: p_one(0,20);
+          break;
+          case 2: p_two(0,20);
+          break;
+          case 3: p_three(0,20);
+          break;
+          default: p_zero(0,20);
+        }
+//        p_dot(4,20);
+        switch((int)(a[i]*10)%10){
+          case 0: p_zero(4,20);
+          break;
+          case 1: p_one(4,20);
+          break;
+          case 2: p_two(4,20);
+          break;
+          case 3: p_three(4,20);
+          break;
+          case 4: p_four(4,20);
+          break;
+          case 5: p_five(4,20);
+          break;
+          case 6: p_six(4,20);
+          break;
+          case 7: p_seven(4,20);
+          break;
+          case 8: p_eight(4,20);
+          break;
+          case 9: p_nine(4,20);
+          break;
+          default: p_zero(4,20);
+        }
+      }
+      else if(i==3){
+         switch((int)a[i]){
+          case 0: p_zero(0,13);
+          break;
+          case 1: p_one(0,13);
+          break;
+          case 2: p_two(0,13);
+          break;
+          case 3: p_three(0,13);
+          break;
+          default: p_zero(0,13);
+        }
+//        p_dot(4,13);
+        switch((int)(a[i]*10)%10){
+          case 0: p_zero(4,13);
+          break;
+          case 1: p_one(4,13);
+          break;
+          case 2: p_two(4,13);
+          break;
+          case 3: p_three(4,13);
+          break;
+          case 4: p_four(4,13);
+          break;
+          case 5: p_five(4,13);
+          break;
+          case 6: p_six(4,13);
+          break;
+          case 7: p_seven(4,13);
+          break;
+          case 8: p_eight(4,13);
+          break;
+          case 9: p_nine(4,13);
+          break;
+          default: p_zero(4,13);
+        }
+      }else if (i==4){
+        switch((int)a[i]){
+          case 0: p_zero(0,6);
+          break;
+          case 1: p_one(0,6);
+          break;
+          case 2: p_two(0,6);
+          break;
+          case 3: p_three(0,6);
+          break;
+          default: p_zero(0,6);
+        }
+//        p_dot(4,6);
+        switch((int)(a[i]*10)%10){
+          case 0: p_zero(4,6);
+          break;
+          case 1: p_one(4,6);
+          break;
+          case 2: p_two(4,6);
+          break;
+          case 3: p_three(4,6);
+          break;
+          case 4: p_four(4,6);
+          break;
+          case 5: p_five(4,6);
+          break;
+          case 6: p_six(4,6);
+          break;
+          case 7: p_seven(4,6);
+          break;
+          case 8: p_eight(4,6);
+          break;
+          case 9: p_nine(4,6);
+          break;
+          default: p_zero(4,6);
+        }
+      }
     }
   }
 
