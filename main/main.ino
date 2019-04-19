@@ -80,8 +80,8 @@ void setup()   {
   float ar1[5]={0.1,0.3,0.5,0.7,0.9};
   float ar2[5]={0.1,0.3,0.5,0.7,0.9};
 
-//  if((int)(ar1[0]*10)%10==1)
-//    p_zero(20,20);
+  if((int)(ar1[0]*10)%10==1)
+    p_zero(20,20);
 
   drawY_Axis();
   drawX_Axis();
