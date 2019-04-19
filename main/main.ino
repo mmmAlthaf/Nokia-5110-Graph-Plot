@@ -878,7 +878,7 @@ void drawX_Axis_ValuesNew(float a[]) {
       }
     }else if( (int)a[i]>9){
       if(i==0){
-        switch((int)a[i]){
+        switch((int)(a[i]/10)){
           case 0: p_zero(15,43);
           break;
           case 1: p_one(15,43);
@@ -890,7 +890,7 @@ void drawX_Axis_ValuesNew(float a[]) {
           default: p_zero(15,43);
         }
 //        p_dot(19,43);
-        switch((int)(a[i]*10)%10){
+        switch((int)(a[i])%10){
           case 0: p_zero(19,43);
           break;
           case 1: p_one(19,43);
@@ -915,7 +915,7 @@ void drawX_Axis_ValuesNew(float a[]) {
         }
       }
       else if(i==1){
-        switch((int)a[i]){
+        switch((int)(a[i]/10)){
           case 0: p_zero(27,43);
           break;
           case 1: p_one(27,43);
@@ -927,7 +927,7 @@ void drawX_Axis_ValuesNew(float a[]) {
           default: p_zero(27,43);
         }
 //        p_dot(31,43);
-        switch((int)(a[i]*10)%10){
+        switch((int)(a[i])%10){
           case 0: p_zero(31,43);
           break;
           case 1: p_one(31,43);
@@ -952,7 +952,7 @@ void drawX_Axis_ValuesNew(float a[]) {
         }
       }
       else if(i==2){
-        switch((int)a[i]){
+        switch((int)(a[i]/10)){
           case 0: p_zero(39,43);
           break;
           case 1: p_one(39,43);
@@ -964,7 +964,7 @@ void drawX_Axis_ValuesNew(float a[]) {
           default: p_zero(39,43);
         }
 //        p_dot(43,43);
-        switch((int)(a[i]*10)%10){
+        switch((int)(a[i])%10){
           case 0: p_zero(43,43);
           break;
           case 1: p_one(43,43);
@@ -989,7 +989,7 @@ void drawX_Axis_ValuesNew(float a[]) {
         }
       }
       else if(i==3){
-         switch((int)a[i]){
+         switch((int)(a[i]/10)){
           case 0: p_zero(51,43);
           break;
           case 1: p_one(51,43);
@@ -1001,7 +1001,7 @@ void drawX_Axis_ValuesNew(float a[]) {
           default: p_zero(51,43);
         }
 //        p_dot(55,43);
-        switch((int)(a[i]*10)%10){
+        switch((int)(a[i])%10){
           case 0: p_zero(55,43);
           break;
           case 1: p_one(55,43);
@@ -1025,7 +1025,7 @@ void drawX_Axis_ValuesNew(float a[]) {
           default: p_zero(55,43);
         }
       }else if (i==4){
-        switch((int)a[i]){
+        switch((int)(a[i]/10)){
           case 0: p_zero(63,43);
           break;
           case 1: p_one(63,43);
@@ -1037,7 +1037,7 @@ void drawX_Axis_ValuesNew(float a[]) {
           default: p_zero(63,43);
         }
 //        p_dot(67,43);
-        switch((int)(a[i]*10)%10){
+        switch((int)(a[i])%10){
           case 0: p_zero(67,43);
           break;
           case 1: p_one(67,43);
