@@ -73,12 +73,12 @@ void setup()   {
 
   // you can change the contrast around to adapt the display
   // for the best viewing!
-  display.setContrast(55);
+  display.setContrast(35);
 
   display.clearDisplay();   // clears the screen and buffer
 
-  float ar1[5]={1,1.3,25,3.7,19.9};
-  float ar2[5]={11,5.3,4.5,18.7,29};
+  float ar1[5]={1,1.5,2,2.5,3};
+  float ar2[5]={10,15,20,25,30};
 
 //  if((int)(ar1[0]*10)%10==1)
 //    p_zero(20,20);
@@ -92,12 +92,12 @@ void setup()   {
   
 
   
-//  int a[]={20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,40,41,42,43,44,45,46,47,48};
-//  int b[]={10,11,12,13,14,15,16,17,18,20,21,21,21,22,22,22,23,24,24,24,25,25,25,25,26,26,26,26};
-//  
-//   for(int i=0;i<25;i++){
-//   display.drawPixel(a[i], b[i], BLACK);
-// }
+  int a[]={83,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,40,41,42,43,44,45,46,47,48};//X axis (I) 11 - 83
+  int b[]={0,11,12,13,14,15,16,17,18,20,21,21,21,22,22,22,23,24,24,24,25,25,25,25,26,26,26,26};//Y axis (V)
+  
+   for(int i=0;i<25;i++){
+   display.drawPixel(a[i], b[i], BLACK);
+ }
   
   display.display();
   delay(2000);
